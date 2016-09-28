@@ -7,12 +7,20 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		41606FEDBABB7B53E3B9E5AB /* libPods-IOS_LZhomeAppliances.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 02368E74B428C15031F86CFA /* libPods-IOS_LZhomeAppliances.a */; };
 		442315241CCF5C3C0005B6CB /* GCDAsyncSocket.m in Sources */ = {isa = PBXBuildFile; fileRef = 4423151F1CCF5C3C0005B6CB /* GCDAsyncSocket.m */; };
 		442315251CCF5C3C0005B6CB /* SocketTcp.m in Sources */ = {isa = PBXBuildFile; fileRef = 442315221CCF5C3C0005B6CB /* SocketTcp.m */; };
 		4436FD771CA8D25B007CF1F9 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4436FD761CA8D25B007CF1F9 /* Main.storyboard */; };
-		443F41171D2CF0A50059357B /* AdjustImageView.m in Sources */ = {isa = PBXBuildFile; fileRef = 443F41141D2CF0A50059357B /* AdjustImageView.m */; };
-		443F41181D2CF0A50059357B /* AdjustModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 443F41161D2CF0A50059357B /* AdjustModel.m */; };
+		4440AF0E1D376C2800E8CA05 /* myFlow.m in Sources */ = {isa = PBXBuildFile; fileRef = 4440AF0D1D376C2800E8CA05 /* myFlow.m */; };
+		4440AF121D376F3500E8CA05 /* subjCollectionViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 4440AF101D376F3500E8CA05 /* subjCollectionViewCell.m */; };
+		4440AF131D376F3500E8CA05 /* subjCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4440AF111D376F3500E8CA05 /* subjCollectionViewCell.xib */; };
+		44446A851D3391A8005CAA1D /* SliderTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 44446A831D3391A8005CAA1D /* SliderTableViewCell.m */; };
+		44446A861D3391A8005CAA1D /* SliderTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 44446A841D3391A8005CAA1D /* SliderTableViewCell.xib */; };
+		44446A891D33A219005CAA1D /* mytabTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 44446A881D33A219005CAA1D /* mytabTableViewController.m */; };
 		445352531C9A48FF0017D080 /* File in Resources */ = {isa = PBXBuildFile; fileRef = 445352521C9A48FF0017D080 /* File */; };
+		44589E5D1D349DB2006A5EAD /* OtherTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 44589E5B1D349DB2006A5EAD /* OtherTableViewCell.m */; };
+		44589E5E1D349DB2006A5EAD /* OtherTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 44589E5C1D349DB2006A5EAD /* OtherTableViewCell.xib */; };
+		445C343E1D3DEFFD00F88145 /* FGThrowSlider.m in Sources */ = {isa = PBXBuildFile; fileRef = 445C343D1D3DEFFD00F88145 /* FGThrowSlider.m */; };
 		4464C0E31C97D8530092B91D /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 4464C0E21C97D8530092B91D /* main.m */; };
 		4464C0EE1C97D8530092B91D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4464C0ED1C97D8530092B91D /* Assets.xcassets */; };
 		4464C0F11C97D8530092B91D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4464C0EF1C97D8530092B91D /* LaunchScreen.storyboard */; };
@@ -52,12 +60,13 @@
 		44B03CD91CCF590700F53A48 /* equipmentViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 44B03CB31CCF590700F53A48 /* equipmentViewController.m */; };
 		44B03CDA1CCF590700F53A48 /* TVSViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 44B03CB51CCF590700F53A48 /* TVSViewController.m */; };
 		44B03CDD1CCF595A00F53A48 /* RoomequipmentViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 44B03CDC1CCF595A00F53A48 /* RoomequipmentViewController.m */; };
-		44B03CE01CCF598E00F53A48 /* subSlider.m in Sources */ = {isa = PBXBuildFile; fileRef = 44B03CDF1CCF598E00F53A48 /* subSlider.m */; };
 		44B03CE61CCF5AB700F53A48 /* updateViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 44B03CE51CCF5AB700F53A48 /* updateViewController.m */; };
-		486586671D2D38F000F06169 /* handelelayout.m in Sources */ = {isa = PBXBuildFile; fileRef = 486586661D2D38F000F06169 /* handelelayout.m */; };
-		4865866C1D2D396700F06169 /* myCollectionViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 4865866A1D2D396700F06169 /* myCollectionViewCell.m */; };
-		4865866D1D2D396700F06169 /* myCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4865866B1D2D396700F06169 /* myCollectionViewCell.xib */; };
+		44CAFF8E1D64320500333BFF /* Room.sqlite in Resources */ = {isa = PBXBuildFile; fileRef = 44CAFF8D1D64320500333BFF /* Room.sqlite */; };
+		44EB38A51D4314D800048C8C /* curtainTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 44EB38A31D4314D800048C8C /* curtainTableViewCell.m */; };
+		44EB38A61D4314D800048C8C /* curtainTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 44EB38A41D4314D800048C8C /* curtainTableViewCell.xib */; };
 		486586701D2D39FC00F06169 /* DoMainViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4865866F1D2D39FC00F06169 /* DoMainViewController.m */; };
+		48C52BCE1D33EA9800B989FD /* sconedSliderTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 48C52BCC1D33EA9800B989FD /* sconedSliderTableViewCell.m */; };
+		48C52BCF1D33EA9800B989FD /* sconedSliderTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 48C52BCD1D33EA9800B989FD /* sconedSliderTableViewCell.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -78,16 +87,28 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		02368E74B428C15031F86CFA /* libPods-IOS_LZhomeAppliances.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-IOS_LZhomeAppliances.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		4423151E1CCF5C3C0005B6CB /* GCDAsyncSocket.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GCDAsyncSocket.h; sourceTree = "<group>"; };
 		4423151F1CCF5C3C0005B6CB /* GCDAsyncSocket.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GCDAsyncSocket.m; sourceTree = "<group>"; };
 		442315211CCF5C3C0005B6CB /* SocketTcp.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SocketTcp.h; sourceTree = "<group>"; };
 		442315221CCF5C3C0005B6CB /* SocketTcp.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SocketTcp.m; sourceTree = "<group>"; };
 		4436FD761CA8D25B007CF1F9 /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
-		443F41131D2CF0A50059357B /* AdjustImageView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AdjustImageView.h; sourceTree = "<group>"; };
-		443F41141D2CF0A50059357B /* AdjustImageView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AdjustImageView.m; sourceTree = "<group>"; };
-		443F41151D2CF0A50059357B /* AdjustModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AdjustModel.h; sourceTree = "<group>"; };
-		443F41161D2CF0A50059357B /* AdjustModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AdjustModel.m; sourceTree = "<group>"; };
+		4440AF0C1D376C2800E8CA05 /* myFlow.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = myFlow.h; path = ../controller/myFlow.h; sourceTree = "<group>"; };
+		4440AF0D1D376C2800E8CA05 /* myFlow.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = myFlow.m; path = ../controller/myFlow.m; sourceTree = "<group>"; };
+		4440AF0F1D376F3500E8CA05 /* subjCollectionViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = subjCollectionViewCell.h; sourceTree = "<group>"; };
+		4440AF101D376F3500E8CA05 /* subjCollectionViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = subjCollectionViewCell.m; sourceTree = "<group>"; };
+		4440AF111D376F3500E8CA05 /* subjCollectionViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = subjCollectionViewCell.xib; sourceTree = "<group>"; };
+		44446A821D3391A8005CAA1D /* SliderTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SliderTableViewCell.h; path = ../controller/SliderTableViewCell.h; sourceTree = "<group>"; };
+		44446A831D3391A8005CAA1D /* SliderTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = SliderTableViewCell.m; path = ../controller/SliderTableViewCell.m; sourceTree = "<group>"; };
+		44446A841D3391A8005CAA1D /* SliderTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = SliderTableViewCell.xib; path = ../controller/SliderTableViewCell.xib; sourceTree = "<group>"; };
+		44446A871D33A219005CAA1D /* mytabTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = mytabTableViewController.h; path = ../controller/mytabTableViewController.h; sourceTree = "<group>"; };
+		44446A881D33A219005CAA1D /* mytabTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = mytabTableViewController.m; path = ../controller/mytabTableViewController.m; sourceTree = "<group>"; };
 		445352521C9A48FF0017D080 /* File */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = File; sourceTree = "<group>"; };
+		44589E5A1D349DB2006A5EAD /* OtherTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = OtherTableViewCell.h; path = ../controller/OtherTableViewCell.h; sourceTree = "<group>"; };
+		44589E5B1D349DB2006A5EAD /* OtherTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = OtherTableViewCell.m; path = ../controller/OtherTableViewCell.m; sourceTree = "<group>"; };
+		44589E5C1D349DB2006A5EAD /* OtherTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = OtherTableViewCell.xib; path = ../controller/OtherTableViewCell.xib; sourceTree = "<group>"; };
+		445C343C1D3DEFFD00F88145 /* FGThrowSlider.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = FGThrowSlider.h; path = controller/FGThrowSlider.h; sourceTree = "<group>"; };
+		445C343D1D3DEFFD00F88145 /* FGThrowSlider.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = FGThrowSlider.m; path = controller/FGThrowSlider.m; sourceTree = "<group>"; };
 		4464C0DE1C97D8530092B91D /* IOS_LZhomeAppliances.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = IOS_LZhomeAppliances.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		4464C0E21C97D8530092B91D /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		4464C0ED1C97D8530092B91D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -153,21 +174,23 @@
 		44B03CAB1CCF590700F53A48 /* ZXPAutoLayout.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZXPAutoLayout.m; sourceTree = "<group>"; };
 		44B03CB21CCF590700F53A48 /* equipmentViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = equipmentViewController.h; sourceTree = "<group>"; };
 		44B03CB31CCF590700F53A48 /* equipmentViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = equipmentViewController.m; sourceTree = "<group>"; };
-		44B03CB41CCF590700F53A48 /* TVSViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TVSViewController.h; sourceTree = "<group>"; };
-		44B03CB51CCF590700F53A48 /* TVSViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TVSViewController.m; sourceTree = "<group>"; };
+		44B03CB41CCF590700F53A48 /* TVSViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = TVSViewController.h; path = ../controller/TVSViewController.h; sourceTree = "<group>"; };
+		44B03CB51CCF590700F53A48 /* TVSViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = TVSViewController.m; path = ../controller/TVSViewController.m; sourceTree = "<group>"; };
 		44B03CDB1CCF595A00F53A48 /* RoomequipmentViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RoomequipmentViewController.h; sourceTree = "<group>"; };
 		44B03CDC1CCF595A00F53A48 /* RoomequipmentViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RoomequipmentViewController.m; sourceTree = "<group>"; };
-		44B03CDE1CCF598E00F53A48 /* subSlider.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = subSlider.h; sourceTree = "<group>"; };
-		44B03CDF1CCF598E00F53A48 /* subSlider.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = subSlider.m; sourceTree = "<group>"; };
 		44B03CE41CCF5AB700F53A48 /* updateViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = updateViewController.h; sourceTree = "<group>"; };
 		44B03CE51CCF5AB700F53A48 /* updateViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = updateViewController.m; sourceTree = "<group>"; };
-		486586651D2D38F000F06169 /* handelelayout.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = handelelayout.h; sourceTree = "<group>"; };
-		486586661D2D38F000F06169 /* handelelayout.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = handelelayout.m; sourceTree = "<group>"; };
-		486586691D2D396700F06169 /* myCollectionViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = myCollectionViewCell.h; sourceTree = "<group>"; };
-		4865866A1D2D396700F06169 /* myCollectionViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = myCollectionViewCell.m; sourceTree = "<group>"; };
-		4865866B1D2D396700F06169 /* myCollectionViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = myCollectionViewCell.xib; sourceTree = "<group>"; };
+		44CAFF8D1D64320500333BFF /* Room.sqlite */ = {isa = PBXFileReference; lastKnownFileType = file; path = Room.sqlite; sourceTree = "<group>"; };
+		44EB38A21D4314D800048C8C /* curtainTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = curtainTableViewCell.h; sourceTree = "<group>"; };
+		44EB38A31D4314D800048C8C /* curtainTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = curtainTableViewCell.m; sourceTree = "<group>"; };
+		44EB38A41D4314D800048C8C /* curtainTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = curtainTableViewCell.xib; sourceTree = "<group>"; };
 		4865866E1D2D39FC00F06169 /* DoMainViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DoMainViewController.h; sourceTree = "<group>"; };
 		4865866F1D2D39FC00F06169 /* DoMainViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DoMainViewController.m; sourceTree = "<group>"; };
+		48C52BCB1D33EA9800B989FD /* sconedSliderTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = sconedSliderTableViewCell.h; path = ../controller/sconedSliderTableViewCell.h; sourceTree = "<group>"; };
+		48C52BCC1D33EA9800B989FD /* sconedSliderTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = sconedSliderTableViewCell.m; path = ../controller/sconedSliderTableViewCell.m; sourceTree = "<group>"; };
+		48C52BCD1D33EA9800B989FD /* sconedSliderTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = sconedSliderTableViewCell.xib; path = ../controller/sconedSliderTableViewCell.xib; sourceTree = "<group>"; };
+		4F6C58FC1B7F4ABEF58FEB5D /* Pods-IOS_LZhomeAppliances.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-IOS_LZhomeAppliances.release.xcconfig"; path = "Pods/Target Support Files/Pods-IOS_LZhomeAppliances/Pods-IOS_LZhomeAppliances.release.xcconfig"; sourceTree = "<group>"; };
+		D8F34B883633E4AE8F3BC075 /* Pods-IOS_LZhomeAppliances.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-IOS_LZhomeAppliances.debug.xcconfig"; path = "Pods/Target Support Files/Pods-IOS_LZhomeAppliances/Pods-IOS_LZhomeAppliances.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -175,6 +198,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				41606FEDBABB7B53E3B9E5AB /* libPods-IOS_LZhomeAppliances.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -230,26 +254,18 @@
 			path = view;
 			sourceTree = "<group>";
 		};
-		443F41121D2CF0A50059357B /* SliderTool */ = {
-			isa = PBXGroup;
-			children = (
-				443F41131D2CF0A50059357B /* AdjustImageView.h */,
-				443F41141D2CF0A50059357B /* AdjustImageView.m */,
-				443F41151D2CF0A50059357B /* AdjustModel.h */,
-				443F41161D2CF0A50059357B /* AdjustModel.m */,
-			);
-			path = SliderTool;
-			sourceTree = "<group>";
-		};
 		4464C0D51C97D8530092B91D = {
 			isa = PBXGroup;
 			children = (
+				44CAFF8D1D64320500333BFF /* Room.sqlite */,
 				445352521C9A48FF0017D080 /* File */,
 				44B03C641CCF590700F53A48 /* class */,
 				4464C0E01C97D8530092B91D /* LZjadian */,
 				4464C0FA1C97D8530092B91D /* LZjadianTests */,
 				4464C1051C97D8530092B91D /* LZjadianUITests */,
 				4464C0DF1C97D8530092B91D /* Products */,
+				E9C661C8981A2321FB8EDE73 /* Pods */,
+				528E5AF2926DE80093872FB1 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -304,24 +320,23 @@
 		44B03C641CCF590700F53A48 /* class */ = {
 			isa = PBXGroup;
 			children = (
-				486586681D2D396700F06169 /* collectionVewCell */,
-				486586641D2D38F000F06169 /* collectionLayOut */,
-				44B03C651CCF590700F53A48 /* main界面 */,
-				44B03CAC1CCF590700F53A48 /* 客厅界面 */,
-				44B03CB01CCF590700F53A48 /* 调整界面 */,
+				44B03C651CCF590700F53A48 /* mainInterface */,
+				44B03CAC1CCF590700F53A48 /* sittingRoomInterface */,
+				44B03CB01CCF590700F53A48 /* EquipmentInterface */,
 				44B03C6E1CCF590700F53A48 /* other */,
 			);
 			name = class;
 			path = LZjadian/class;
 			sourceTree = "<group>";
 		};
-		44B03C651CCF590700F53A48 /* main界面 */ = {
+		44B03C651CCF590700F53A48 /* mainInterface */ = {
 			isa = PBXGroup;
 			children = (
 				44B03C661CCF590700F53A48 /* controller */,
 				44B03C6C1CCF590700F53A48 /* model */,
 				44B03C6D1CCF590700F53A48 /* view */,
 			);
+			name = mainInterface;
 			path = "main界面";
 			sourceTree = "<group>";
 		};
@@ -356,14 +371,13 @@
 		44B03C6E1CCF590700F53A48 /* other */ = {
 			isa = PBXGroup;
 			children = (
-				443F41121D2CF0A50059357B /* SliderTool */,
 				4423151C1CCF5C3C0005B6CB /* TCP */,
 				44B03C6F1CCF590700F53A48 /* AppDelegate.h */,
 				44B03C701CCF590700F53A48 /* AppDelegate.m */,
 				44B03C711CCF590700F53A48 /* MBProgressHUD */,
 				44B03C7A1CCF590700F53A48 /* tool */,
-				44B03C801CCF590700F53A48 /* 主界面状态image */,
-				44B03C8E1CCF590700F53A48 /* 自动布局 */,
+				44B03C801CCF590700F53A48 /* MainImage */,
+				44B03C8E1CCF590700F53A48 /* Automaticlayout */,
 			);
 			path = other;
 			sourceTree = "<group>";
@@ -383,6 +397,7 @@
 		44B03C7A1CCF590700F53A48 /* tool */ = {
 			isa = PBXGroup;
 			children = (
+				44EB389C1D41B9EB00048C8C /* coustomSlider */,
 				44B03C7B1CCF590700F53A48 /* controller */,
 				44B03C7E1CCF590700F53A48 /* model */,
 				44B03C7F1CCF590700F53A48 /* view */,
@@ -393,8 +408,6 @@
 		44B03C7B1CCF590700F53A48 /* controller */ = {
 			isa = PBXGroup;
 			children = (
-				44B03CDE1CCF598E00F53A48 /* subSlider.h */,
-				44B03CDF1CCF598E00F53A48 /* subSlider.m */,
 				44B03C7C1CCF590700F53A48 /* ScratchablelatexViewController.h */,
 				44B03C7D1CCF590700F53A48 /* ScratchablelatexViewController.m */,
 			);
@@ -415,7 +428,7 @@
 			path = view;
 			sourceTree = "<group>";
 		};
-		44B03C801CCF590700F53A48 /* 主界面状态image */ = {
+		44B03C801CCF590700F53A48 /* MainImage */ = {
 			isa = PBXGroup;
 			children = (
 				44B03C811CCF590700F53A48 /* 主卧室.png */,
@@ -432,15 +445,17 @@
 				44B03C8C1CCF590700F53A48 /* 老人房.png */,
 				44B03C8D1CCF590700F53A48 /* 餐厅.png */,
 			);
+			name = MainImage;
 			path = "主界面状态image";
 			sourceTree = "<group>";
 		};
-		44B03C8E1CCF590700F53A48 /* 自动布局 */ = {
+		44B03C8E1CCF590700F53A48 /* Automaticlayout */ = {
 			isa = PBXGroup;
 			children = (
 				44B03C8F1CCF590700F53A48 /* Masonry */,
 				44B03CA91CCF590700F53A48 /* ZXPAutoLayout */,
 			);
+			name = Automaticlayout;
 			path = "自动布局";
 			sourceTree = "<group>";
 		};
@@ -485,13 +500,14 @@
 			path = ZXPAutoLayout;
 			sourceTree = "<group>";
 		};
-		44B03CAC1CCF590700F53A48 /* 客厅界面 */ = {
+		44B03CAC1CCF590700F53A48 /* sittingRoomInterface */ = {
 			isa = PBXGroup;
 			children = (
 				44B03CAD1CCF590700F53A48 /* controller */,
 				44B03CAE1CCF590700F53A48 /* model */,
 				44B03CAF1CCF590700F53A48 /* view */,
 			);
+			name = sittingRoomInterface;
 			path = "客厅界面";
 			sourceTree = "<group>";
 		};
@@ -518,13 +534,14 @@
 			path = view;
 			sourceTree = "<group>";
 		};
-		44B03CB01CCF590700F53A48 /* 调整界面 */ = {
+		44B03CB01CCF590700F53A48 /* EquipmentInterface */ = {
 			isa = PBXGroup;
 			children = (
 				44B03CB11CCF590700F53A48 /* controller */,
 				44B03CB61CCF590700F53A48 /* model */,
 				44B03CB71CCF590700F53A48 /* view */,
 			);
+			name = EquipmentInterface;
 			path = "调整界面";
 			sourceTree = "<group>";
 		};
@@ -533,8 +550,6 @@
 			children = (
 				44B03CB21CCF590700F53A48 /* equipmentViewController.h */,
 				44B03CB31CCF590700F53A48 /* equipmentViewController.m */,
-				44B03CB41CCF590700F53A48 /* TVSViewController.h */,
-				44B03CB51CCF590700F53A48 /* TVSViewController.m */,
 			);
 			path = controller;
 			sourceTree = "<group>";
@@ -542,6 +557,25 @@
 		44B03CB61CCF590700F53A48 /* model */ = {
 			isa = PBXGroup;
 			children = (
+				44B03CB41CCF590700F53A48 /* TVSViewController.h */,
+				44B03CB51CCF590700F53A48 /* TVSViewController.m */,
+				44446A821D3391A8005CAA1D /* SliderTableViewCell.h */,
+				44446A831D3391A8005CAA1D /* SliderTableViewCell.m */,
+				44446A841D3391A8005CAA1D /* SliderTableViewCell.xib */,
+				44446A871D33A219005CAA1D /* mytabTableViewController.h */,
+				44446A881D33A219005CAA1D /* mytabTableViewController.m */,
+				48C52BCB1D33EA9800B989FD /* sconedSliderTableViewCell.h */,
+				48C52BCC1D33EA9800B989FD /* sconedSliderTableViewCell.m */,
+				48C52BCD1D33EA9800B989FD /* sconedSliderTableViewCell.xib */,
+				44589E5A1D349DB2006A5EAD /* OtherTableViewCell.h */,
+				44589E5B1D349DB2006A5EAD /* OtherTableViewCell.m */,
+				44589E5C1D349DB2006A5EAD /* OtherTableViewCell.xib */,
+				4440AF0F1D376F3500E8CA05 /* subjCollectionViewCell.h */,
+				4440AF101D376F3500E8CA05 /* subjCollectionViewCell.m */,
+				4440AF111D376F3500E8CA05 /* subjCollectionViewCell.xib */,
+				44EB38A21D4314D800048C8C /* curtainTableViewCell.h */,
+				44EB38A31D4314D800048C8C /* curtainTableViewCell.m */,
+				44EB38A41D4314D800048C8C /* curtainTableViewCell.xib */,
 			);
 			path = model;
 			sourceTree = "<group>";
@@ -549,27 +583,36 @@
 		44B03CB71CCF590700F53A48 /* view */ = {
 			isa = PBXGroup;
 			children = (
+				4440AF0C1D376C2800E8CA05 /* myFlow.h */,
+				4440AF0D1D376C2800E8CA05 /* myFlow.m */,
 			);
 			path = view;
 			sourceTree = "<group>";
 		};
-		486586641D2D38F000F06169 /* collectionLayOut */ = {
+		44EB389C1D41B9EB00048C8C /* coustomSlider */ = {
 			isa = PBXGroup;
 			children = (
-				486586651D2D38F000F06169 /* handelelayout.h */,
-				486586661D2D38F000F06169 /* handelelayout.m */,
+				445C343C1D3DEFFD00F88145 /* FGThrowSlider.h */,
+				445C343D1D3DEFFD00F88145 /* FGThrowSlider.m */,
 			);
-			path = collectionLayOut;
+			name = coustomSlider;
 			sourceTree = "<group>";
 		};
-		486586681D2D396700F06169 /* collectionVewCell */ = {
+		528E5AF2926DE80093872FB1 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				486586691D2D396700F06169 /* myCollectionViewCell.h */,
-				4865866A1D2D396700F06169 /* myCollectionViewCell.m */,
-				4865866B1D2D396700F06169 /* myCollectionViewCell.xib */,
+				02368E74B428C15031F86CFA /* libPods-IOS_LZhomeAppliances.a */,
 			);
-			path = collectionVewCell;
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		E9C661C8981A2321FB8EDE73 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				D8F34B883633E4AE8F3BC075 /* Pods-IOS_LZhomeAppliances.debug.xcconfig */,
+				4F6C58FC1B7F4ABEF58FEB5D /* Pods-IOS_LZhomeAppliances.release.xcconfig */,
+			);
+			name = Pods;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -579,9 +622,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 4464C10B1C97D8530092B91D /* Build configuration list for PBXNativeTarget "IOS_LZhomeAppliances" */;
 			buildPhases = (
+				445CB11DD4F1138F5F57A8D2 /* [CP] Check Pods Manifest.lock */,
 				4464C0DA1C97D8530092B91D /* Sources */,
 				4464C0DB1C97D8530092B91D /* Frameworks */,
 				4464C0DC1C97D8530092B91D /* Resources */,
+				C5966674576830D7781CD375 /* [CP] Embed Pods Frameworks */,
+				02E74C511FA91A022A052424 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -678,8 +724,10 @@
 			files = (
 				44B03CCA1CCF590700F53A48 /* 客厅.png in Resources */,
 				44B03CC61CCF590700F53A48 /* 北阳台.png in Resources */,
+				44EB38A61D4314D800048C8C /* curtainTableViewCell.xib in Resources */,
 				44B03CC71CCF590700F53A48 /* 南阳台.png in Resources */,
 				44B03CC81CCF590700F53A48 /* 厨房.png in Resources */,
+				48C52BCF1D33EA9800B989FD /* sconedSliderTableViewCell.xib in Resources */,
 				44B03CCD1CCF590700F53A48 /* 餐厅.png in Resources */,
 				44B03CC41CCF590700F53A48 /* 书房.png in Resources */,
 				445352531C9A48FF0017D080 /* File in Resources */,
@@ -694,8 +742,11 @@
 				44B03CC21CCF590700F53A48 /* 主卫生间.png in Resources */,
 				4436FD771CA8D25B007CF1F9 /* Main.storyboard in Resources */,
 				44B03CBA1CCF590700F53A48 /* updateViewController.xib in Resources */,
-				4865866D1D2D396700F06169 /* myCollectionViewCell.xib in Resources */,
+				44589E5E1D349DB2006A5EAD /* OtherTableViewCell.xib in Resources */,
+				44CAFF8E1D64320500333BFF /* Room.sqlite in Resources */,
 				44B03CBD1CCF590700F53A48 /* MBProgressHUD.bundle in Resources */,
+				44446A861D3391A8005CAA1D /* SliderTableViewCell.xib in Resources */,
+				4440AF131D376F3500E8CA05 /* subjCollectionViewCell.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -715,36 +766,87 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		02E74C511FA91A022A052424 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-IOS_LZhomeAppliances/Pods-IOS_LZhomeAppliances-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		445CB11DD4F1138F5F57A8D2 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		C5966674576830D7781CD375 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-IOS_LZhomeAppliances/Pods-IOS_LZhomeAppliances-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		4464C0DA1C97D8530092B91D /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 				44B03CC01CCF590700F53A48 /* ScratchablelatexViewController.m in Sources */,
+				4440AF0E1D376C2800E8CA05 /* myFlow.m in Sources */,
 				44B03CBB1CCF590700F53A48 /* AppDelegate.m in Sources */,
 				44B03CE61CCF5AB700F53A48 /* updateViewController.m in Sources */,
 				44B03CD41CCF590700F53A48 /* NSArray+MASAdditions.m in Sources */,
-				44B03CE01CCF598E00F53A48 /* subSlider.m in Sources */,
+				44589E5D1D349DB2006A5EAD /* OtherTableViewCell.m in Sources */,
 				44B03CD91CCF590700F53A48 /* equipmentViewController.m in Sources */,
-				443F41181D2CF0A50059357B /* AdjustModel.m in Sources */,
+				4440AF121D376F3500E8CA05 /* subjCollectionViewCell.m in Sources */,
 				44B03CDD1CCF595A00F53A48 /* RoomequipmentViewController.m in Sources */,
-				443F41171D2CF0A50059357B /* AdjustImageView.m in Sources */,
 				44B03CBE1CCF590700F53A48 /* MBProgressHUD.m in Sources */,
+				44EB38A51D4314D800048C8C /* curtainTableViewCell.m in Sources */,
 				486586701D2D39FC00F06169 /* DoMainViewController.m in Sources */,
 				44B03CD61CCF590700F53A48 /* View+MASAdditions.m in Sources */,
 				44B03CD11CCF590700F53A48 /* MASLayoutConstraint.m in Sources */,
 				44B03CCF1CCF590700F53A48 /* MASConstraint.m in Sources */,
+				44446A851D3391A8005CAA1D /* SliderTableViewCell.m in Sources */,
+				445C343E1D3DEFFD00F88145 /* FGThrowSlider.m in Sources */,
 				44B03CD51CCF590700F53A48 /* NSLayoutConstraint+MASDebugAdditions.m in Sources */,
-				4865866C1D2D396700F06169 /* myCollectionViewCell.m in Sources */,
+				44446A891D33A219005CAA1D /* mytabTableViewController.m in Sources */,
 				44B03CCE1CCF590700F53A48 /* MASCompositeConstraint.m in Sources */,
 				442315241CCF5C3C0005B6CB /* GCDAsyncSocket.m in Sources */,
 				442315251CCF5C3C0005B6CB /* SocketTcp.m in Sources */,
 				44B03CBC1CCF590700F53A48 /* MBProgressHUD+MJ.m in Sources */,
 				4464C0E31C97D8530092B91D /* main.m in Sources */,
+				48C52BCE1D33EA9800B989FD /* sconedSliderTableViewCell.m in Sources */,
 				44B03CD01CCF590700F53A48 /* MASConstraintMaker.m in Sources */,
 				44B03CD71CCF590700F53A48 /* ViewController+MASAdditions.m in Sources */,
 				44B03CD31CCF590700F53A48 /* MASViewConstraint.m in Sources */,
-				486586671D2D38F000F06169 /* handelelayout.m in Sources */,
 				44B03CD81CCF590700F53A48 /* ZXPAutoLayout.m in Sources */,
 				44B03CDA1CCF590700F53A48 /* TVSViewController.m in Sources */,
 				44B03CB81CCF590700F53A48 /* MainViewController.m in Sources */,
@@ -879,14 +981,15 @@
 		};
 		4464C10C1C97D8530092B91D /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = D8F34B883633E4AE8F3BC075 /* Pods-IOS_LZhomeAppliances.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				INFOPLIST_FILE = LZjadian/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.2;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = langzhou.LZjadian12;
+				PRODUCT_BUNDLE_IDENTIFIER = langzhou.LZjadian;
 				PRODUCT_NAME = IOS_LZhomeAppliances;
 				PROVISIONING_PROFILE = "";
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -895,14 +998,15 @@
 		};
 		4464C10D1C97D8530092B91D /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 4F6C58FC1B7F4ABEF58FEB5D /* Pods-IOS_LZhomeAppliances.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				INFOPLIST_FILE = LZjadian/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.2;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = langzhou.LZjadian12;
+				PRODUCT_BUNDLE_IDENTIFIER = langzhou.LZjadian;
 				PRODUCT_NAME = IOS_LZhomeAppliances;
 				PROVISIONING_PROFILE = "";
 				TARGETED_DEVICE_FAMILY = "1,2";

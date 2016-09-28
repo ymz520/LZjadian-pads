@@ -8,270 +8,167 @@
 
 #import "TVSViewController.h"
 #import "Masonry.h"
-@interface TVSViewController ()
+#import "myFlow.h"
+#import "subjCollectionViewCell.h"
+@interface TVSViewController ()<UICollectionViewDelegate,UICollectionViewDataSource,UICollectionViewDelegateFlowLayout>
 {
     UIButton *backbtn;
+    NSMutableArray *_imgOne;
+    NSMutableArray *_imgTwo;
+    NSMutableArray *_imgThere;
+    NSMutableArray *_imgFour;
+    UICollectionView *collectionv;
+    
+    
 }
 @end
-
+static NSString *cellstr=@"cell";
 @implementation TVSViewController
+//懒加载
+-(NSArray *)sectionCount
+{
+    if (!_sectionCount)
+    {
+        
+        _imgOne=[NSMutableArray array];
+        _imgTwo=[NSMutableArray array];
+        _imgFour=[NSMutableArray array];
+        _imgThere=[NSMutableArray array];
+        for (int i=1; i<11; i++)
+        {
+            [_imgOne addObject:[NSString stringWithFormat:@"1-%d",i]];
+//            [self.sectionCount addObject:@"1-1.1"];
+        }
+        for (int i=11; i<24; i++) {
+            [_imgTwo addObject:[NSString stringWithFormat:@"1-%d",i]];
+        }
+             for (int i=24; i<39; i++) {
+            [_imgThere addObject:[NSString stringWithFormat:@"1-%d",i]];
+        }
 
+                  for (int i=39; i<44; i++) {
+                 [_imgFour addObject:[NSString stringWithFormat:@"1-%d",i]];
+             }
+       self.sectionCount=[NSArray arrayWithObjects:_imgOne,_imgTwo,_imgThere,_imgFour, nil];
+
+        
+    }
+    return _sectionCount;
+
+
+}
 - (void)viewDidLoad
 {
     [super viewDidLoad];
-    [self createtv];
+    UIImageView *vi=[[UIImageView alloc]initWithFrame:CGRectMake(0, 0, 200, 300)];
+    vi.image=[UIImage imageNamed:@"1-1-0.png"];
+//    [self.view addSubview:vi];
+    [self createCollectionV];
+//    [self createtv];
 }
--(void)createtv
+#pragma mark-创建uicollectionview
+-(void)createCollectionV
 {
-    self.view.backgroundColor=[UIColor grayColor];
-    int totalloc=5;
-    CGFloat appvieww=self.view.frame.size.width/12;
-    CGFloat appviewh=appvieww/4;
-    CGFloat margin=((self.view.frame.size.width-totalloc*appvieww)/(totalloc+1))/2;
-    CGFloat appviewSecondh=appvieww;
-    NSString *titlestr;
-    NSArray *topBtnArs=[[NSArray alloc]initWithObjects:@"机顶盒",@"机顶盒",@"机顶盒",@"机顶盒",@"机顶盒",@"IPTV",@"卫星",@"电脑",@"锁定",@"信号源", nil];
-//    NSArray *zBtnArs=[[NSArray alloc]initWithObjects:@"1",@"2",@"3",@"4",@"5",@"6",@"7",@"8",@"9",@"0",@"-/--",@"*",@"#",@"设置",@"回看", nil];
-    [self createBtn:topBtnArs andbtnW:appvieww andbtnH:appviewh andMargin:margin andbtnColor:[UIColor orangeColor]];
-    int btnrow=9/5;
-    CGFloat btntopy=margin+(margin+appviewh)*btnrow+64+appviewh;
-    for (int i=0; i<15; i++)
-    {
-        CGFloat appviewx;
-        CGFloat appviewy;
-        int row=i/totalloc;//行号
-        //1/3=0,2/3=0,3/3=1;
-        int loc=i%totalloc;//列号
-        appviewx=margin*7/2+(margin+appvieww)*loc;
-        appviewy=margin+(margin+appviewSecondh)*row;
-        //创建uiview控件
-        UIButton *btn2=[UIButton new];
-        btn2.backgroundColor=[UIColor orangeColor];
-        btn2.layer.cornerRadius=5;
-        [btn2 setTitleColor:[UIColor whiteColor] forState:UIControlStateNormal];
-        btn2.titleLabel.font = [UIFont systemFontOfSize:appvieww/4];
-        titlestr=@"";
-        switch (i) {
-            case 0:
-                [btn2 setImage:[UIImage imageNamed:@"jingy"] forState:UIControlStateNormal];
-                break;
-            case 1:
-                titlestr=@"主页";
-                btn2.backgroundColor=[UIColor colorWithRed:143/255.0 green:143/255.0 blue:143/255.0 alpha:1];;
-                break;
-            case 2:
-                btn2.backgroundColor=[UIColor colorWithRed:194/255.0 green:160/255.0 blue:48/255.0 alpha:1];
-                [btn2 setImage:[UIImage imageNamed:@"top"] forState:UIControlStateNormal];
-                break;
-            case 3:
-                titlestr=@"菜单";
-                btn2.backgroundColor=[UIColor colorWithRed:143/255.0 green:143/255.0 blue:143/255.0 alpha:1];
-                break;
-            case 4:
-                titlestr=@"多画面";
-                btn2.backgroundColor=[UIColor colorWithRed:45/255.0 green:107/255.0 blue:180/255.0 alpha:1];
-                break;
-            case 5:
-                btn2.backgroundColor=[UIColor colorWithRed:45/255.0 green:107/255.0 blue:180/255.0 alpha:1];
-                [btn2 setImage:[UIImage imageNamed:@"jia"] forState:UIControlStateNormal];                break;
-            case 6:
-                btn2.backgroundColor=[UIColor colorWithRed:129/255.0 green:157/255.0 blue:39/255.0 alpha:1];
-                [btn2 setImage:[UIImage imageNamed:@"left"] forState:UIControlStateNormal];                break;
-                break;
-            case 7:
-                btn2.backgroundColor=[UIColor colorWithRed:167/255.0 green:30/255.0 blue:41/255.0 alpha:1];
-                titlestr=@"确认";
-                break;
-            case 8:
-                btn2.backgroundColor=[UIColor colorWithRed:121/255.0 green:178/255.0 blue:208/255.0 alpha:1];
-                [btn2 setImage:[UIImage imageNamed:@"right"] forState:UIControlStateNormal];                 break;
-            case 9:
-                btn2.backgroundColor=[UIColor colorWithRed:198/255.0 green:108/255.0 blue:68/255.0 alpha:1];
-                [btn2 setImage:[UIImage imageNamed:@"top"] forState:UIControlStateNormal];               break;
-            case 10:
-                //                titlestr=@"多画面";
-                btn2.backgroundColor=[UIColor colorWithRed:45/255.0 green:107/255.0 blue:180/255.0 alpha:1];
-                [btn2 setImage:[UIImage imageNamed:@"jian"] forState:UIControlStateNormal];
-                break;
-            case 11:
-                titlestr=@"返回";
-                btn2.backgroundColor=[UIColor colorWithRed:143/255.0 green:143/255.0 blue:143/255.0 alpha:1];
-                [btn2 setImage:[UIImage imageNamed:@""] forState:UIControlStateNormal];                break;
-            case 12:
-                btn2.backgroundColor=[UIColor colorWithRed:183/255.0 green:100/255.0 blue:63/255.0 alpha:1];
-                [btn2 setImage:[UIImage imageNamed:@"botmot"] forState:UIControlStateNormal];                break;
-                break;
-            case 13:
-                btn2.backgroundColor=[UIColor colorWithRed:143/255.0 green:143/255.0 blue:143/255.0 alpha:1];
-                titlestr=@"3D";
-                break;
-            case 14:
-                btn2.backgroundColor=[UIColor colorWithRed:183/255.0 green:100/255.0 blue:63/255.0 alpha:1];
-                [btn2 setImage:[UIImage imageNamed:@"botmot"] forState:UIControlStateNormal];                 break;
-            default:
-                break;
-        }
-        
-        [btn2 setTitle:titlestr forState:UIControlStateNormal];
-        //        自动布局
-        [self.view addSubview:btn2];
-        //约束2
-        [btn2 mas_makeConstraints:^(MASConstraintMaker *make)
-         {
-             
-             make.height.mas_equalTo(appviewSecondh);
-             make.width.mas_equalTo(appvieww);
-             make.left.equalTo(self.view).with.offset(appviewx);
-             make.top.equalTo(self.view).with.offset(btntopy+margin+appviewy);
-         }];
-    }
-    int btnInrow=14/5;
-  
-    CGFloat btniny=margin+(margin+appviewSecondh)*btnInrow+btntopy+margin+appviewSecondh;
-//    [self createBtn:zBtnArs andbtnW:appvieww andbtnH:appvieww andMargin:margin andbtnColor:[UIColor colorWithRed:129/255.0 green:157/255.0 blue:39/255.0 alpha:1]];
-    for (int i=0; i<15; i++)
-    {
-        CGFloat appviewx;
-        CGFloat appviewy;
-        int row=i/totalloc;//行号
-        //1/3=0,2/3=0,3/3=1;
-        int loc=i%totalloc;//列号
-        appviewx=margin*7/2+(margin+appvieww)*loc;
-        appviewy=margin+(margin+appviewSecondh)*row;
-        //创建uiview控件
-        UIButton *btn1=[UIButton new];
-        btn1.backgroundColor=[UIColor colorWithRed:129/255.0 green:157/255.0 blue:39/255.0 alpha:1];
-        btn1.layer.cornerRadius=5;
-        [btn1 setTitleColor:[UIColor whiteColor] forState:UIControlStateNormal];
-        btn1.titleLabel.font = [UIFont systemFontOfSize:appvieww/3];
-        titlestr=[NSString stringWithFormat:@"%d",i+1];
-        switch (i)
-        {
-            case 9:
-                titlestr=@"0";
-                break;
-            case 10:
-                titlestr=@"-/--";
-                break;
-            case 11:
-                titlestr=@"*";
-                break;
-            case 12:
-                
-                titlestr=@"#";
-                break;
-            case 13:
-                titlestr=@"设置";
-                break;
-            case 14:
-                titlestr=@"回看";
-                break;
-            default:
-                break;
-        }
-        [btn1 setTitle:titlestr forState:UIControlStateNormal];
-        //        自动布局
-        [self.view addSubview:btn1];
-        //约束2
-        [btn1 mas_makeConstraints:^(MASConstraintMaker *make)
-         {
-             
-             make.height.mas_equalTo(appviewSecondh);
-             make.width.mas_equalTo(appvieww);
-             make.left.equalTo(self.view).with.offset(appviewx);
-             make.top.equalTo(self.view).with.offset( btniny+margin+appviewy);
-         }];
-    }
-    int btnlastrow=14/5;
-    CGFloat btnasty=margin+(margin+appviewSecondh)*btnInrow+btniny+margin+appviewSecondh;
     
-    for (int i=0; i<5; i++)
-    {
-        CGFloat appviewx;
-        CGFloat appviewy;
-        int row=i/totalloc;//行号
-        //1/3=0,2/3=0,3/3=1;
-        int loc=i%totalloc;//列号
-        appviewx=margin*7/2+(margin+appvieww)*loc;
-        appviewy=margin+(margin+appviewh)*row;
-        //创建uiview控件
-        UIButton *btn1=[UIButton new];
-        btn1.backgroundColor=[UIColor colorWithRed:183/255.0 green:100/255.0 blue:63/255.0 alpha:1];
-        btn1.layer.cornerRadius=5;
-        [btn1 setTitleColor:[UIColor whiteColor] forState:UIControlStateNormal];
-        btn1.titleLabel.font = [UIFont systemFontOfSize:8];
-        //        titlestr=@"机顶盒";
-        switch (i) {
-            case 0:
-                titlestr=@"直播/定时";
-                break;
-            case 1:
-                btn1.backgroundColor=[UIColor colorWithRed:39/255.0 green:89/255.0 blue:49/255.0 alpha:1];
-                titlestr=@"广播/回收";
-                break;
-            case 2:
-                btn1.backgroundColor=[UIColor colorWithRed:195/255.0 green:183/255.0 blue:51/255.0 alpha:1];
-                titlestr=@"点播/搜台";
-                break;
-            case 3:
-                btn1.backgroundColor=[UIColor colorWithRed:39/255.0 green:90/255.0 blue:167/255.0 alpha:1];
-                titlestr=@"邮件/资讯";
-                break;
-            case 4:
-                btn1.backgroundColor=[UIColor redColor];
-                titlestr=@"切换/模式";
-                break;
-                
-            default:
-                break;
-        }
-        [btn1 setTitle:titlestr forState:UIControlStateNormal];
-        //        自动布局
-        [self.view addSubview:btn1];
-        //约束2
-        [btn1 mas_makeConstraints:^(MASConstraintMaker *make)
-         {
-             
-             make.height.mas_equalTo(appviewh);
-             make.width.mas_equalTo(appvieww);
-             make.left.equalTo(self.view).with.offset(appviewx);
-             make.top.equalTo(self.view).with.offset(btnasty+margin/2);
-         }];
-    }
+    UICollectionViewFlowLayout *layout=[[UICollectionViewFlowLayout alloc]init];
+    collectionv=[[UICollectionView alloc]initWithFrame:CGRectMake(0, 0, self.view.frame.size.width, self.view.frame.size.height) collectionViewLayout:layout];
+    collectionv.backgroundColor=[UIColor grayColor];
+    [collectionv registerNib:[UINib nibWithNibName:@"subjCollectionViewCell"bundle:nil] forCellWithReuseIdentifier:cellstr];
+    collectionv.delegate=self;
+    collectionv.dataSource=self;
+    
+//    layout.delegateFlowLayout=self;
+   layout.scrollDirection=UICollectionViewScrollDirectionVertical;
+    layout.minimumLineSpacing=0.0;
+//    layout.m=5.0;
+    [self.view addSubview:collectionv];
+
 }
-#pragma mark-创建按钮
--(void)createBtn:(NSArray *)btnars andbtnW:(CGFloat)btnW andbtnH:(CGFloat)btnH andMargin:(CGFloat)Margin andbtnColor:(UIColor *)btnColor
+
+-(NSInteger)numberOfSectionsInCollectionView:(UICollectionView *)collectionView
 {
-    for (int i=0; i<btnars.count; i++)
-    {
-        CGFloat appviewx;
-        CGFloat appviewy;
-        int row=i/5;//行号
-                //1/3=0,2/3=0,3/3=1;
-        int loc=i%5;//列号
-        appviewx=Margin*7/2+(Margin+btnW)*loc;
-        appviewy=Margin+(Margin+btnH)*row;
-        
-        //创建uiview控件
-        UIButton *btn1=[UIButton new];
-        btn1.backgroundColor=btnColor;
-        btn1.layer.cornerRadius=5;
-        [btn1 setTitleColor:[UIColor whiteColor] forState:UIControlStateNormal];
-        btn1.titleLabel.font = [UIFont systemFontOfSize:btnH/2];
-        NSString  *titlestr=btnars[i];
-        [btn1 setTitle:titlestr forState:UIControlStateNormal];
-        //        自动布局
-        [self.view addSubview:btn1];
-        //约束2
-        [btn1 mas_makeConstraints:^(MASConstraintMaker *make)
-         {
-             make.height.mas_equalTo(btnH);
-             make.width.mas_equalTo(btnW);
-             make.left.equalTo(self.view).with.offset(appviewx);
-             make.top.equalTo(self.view).with.offset(appviewy+64);
-         }];
-    }
+     NSLog(@"%lu",[self.sectionCount count]);
+    return [self.sectionCount count];
+
 }
+#pragma mark-datasoure
+- (NSInteger)collectionView:(UICollectionView *)collectionView numberOfItemsInSection:(NSInteger)section
+{
+    NSLog(@"%lu",(unsigned long)[[_sectionCount objectAtIndex:section]count]);
+    return [[_sectionCount objectAtIndex:section]count];
+    
+
+}
+- (UICollectionViewCell *)collectionView:(UICollectionView *)collectionView cellForItemAtIndexPath:(NSIndexPath *)indexPath
+{
+    subjCollectionViewCell *cell=[collectionView dequeueReusableCellWithReuseIdentifier:cellstr forIndexPath:indexPath];
+    NSLog(@"%@",[_sectionCount[indexPath.section] objectAtIndex:indexPath.row]);
+//    cell.imgstr=;
+    [cell.subImgv setBackgroundImage:[UIImage imageNamed:[_sectionCount[indexPath.section] objectAtIndex:indexPath.row]] forState:UIControlStateNormal];
+    [cell.subImgv addTarget:self action:@selector(bottonOnclick:) forControlEvents:UIControlEventTouchUpInside];
+//    cell.subImgv.image=[UIImage imageNamed:@"1-1.1"];
+    return cell;
+
+}
+#pragma mark-按钮点击事件
+-(void)bottonOnclick:(UIButton *)sender
+{
+    //cell--->contentview－－－－>button
+    UIView *v=[sender superview];//获取父类（contentview）
+    subjCollectionViewCell *cell=(subjCollectionViewCell *)[v superview];//获取（contentview）的父类
+    NSIndexPath *indexpaths=[collectionv indexPathForCell:cell];//获取cell对应的indexpath
+    NSLog(@"==%@",[NSString stringWithFormat:@"%@.1",[_sectionCount[indexpaths.section] objectAtIndex:indexpaths.row]]);
+    if (!sender.selected)
+    {
+        [sender setBackgroundImage:[UIImage imageNamed:[NSString stringWithFormat:@"%@-0",[_sectionCount[indexpaths.section] objectAtIndex:indexpaths.row]]] forState:UIControlStateSelected];
+        
+    }else
+    {
+        [sender setBackgroundImage:[UIImage imageNamed:[_sectionCount[indexpaths.section] objectAtIndex:indexpaths.row]] forState:UIControlStateNormal];
+    }
+    sender.selected=!sender.selected;
+    
+}
+
+
+- (UIEdgeInsets)collectionView:(UICollectionView *)collectionView layout:(UICollectionViewLayout*)collectionViewLayout insetForSectionAtIndex:(NSInteger)section
+{
+    UIEdgeInsets insetForSection;
+    if (section>1)
+    {
+        insetForSection = UIEdgeInsetsMake(0, 100, 0, 100);
+    }
+    insetForSection = UIEdgeInsetsMake(15, 100, 15, 100);
+    return insetForSection;
+}
+
+-(CGSize)collectionView:(UICollectionView *)collectionView layout:(UICollectionViewLayout *)collectionViewLayout sizeForItemAtIndexPath:(NSIndexPath *)indexPath
+{
+    if (indexPath.section>0&indexPath.section<3)
+    {
+        
+        
+        if (indexPath.section==1)
+        {
+            NSLog(@"%ld===%ld",(long)indexPath.section, (long)indexPath.item);
+            if (indexPath.item==5||indexPath.item==9)
+            {
+                return CGSizeMake(100, 160);
+            }
+        }
+        
+        
+        return CGSizeMake(100, 100);
+        
+    }else
+    {
+        return CGSizeMake(100, 80);
+        
+    }
+    
+}
+
+
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
 }

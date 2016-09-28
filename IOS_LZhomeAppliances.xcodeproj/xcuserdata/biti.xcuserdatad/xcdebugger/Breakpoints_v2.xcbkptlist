@@ -6,16 +6,16 @@
       <BreakpointProxy
          BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
          <BreakpointContent
-            shouldBeEnabled = "Yes"
+            shouldBeEnabled = "No"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "LZjadian/class/&#x8c03;&#x6574;&#x754c;&#x9762;/controller/equipmentViewController.m"
-            timestampString = "489505146.533368"
+            timestampString = "489943555.83838"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "750"
-            endingLineNumber = "750"
-            landmarkName = "-createHomeView:"
+            startingLineNumber = "786"
+            endingLineNumber = "786"
+            landmarkName = "-createCurtainView:andars:andimgvw:andimgName:andright:"
             landmarkType = "5">
          </BreakpointContent>
       </BreakpointProxy>

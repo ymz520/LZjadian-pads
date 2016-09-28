@@ -22,7 +22,7 @@
 //    [self.window makeKeyAndVisible];
 //    
    
-        equipmentViewController *oauth=[[equipmentViewController alloc]init];
+//        equipmentViewController *oauth=[[equipmentViewController alloc]init];
 //        self.window.rootViewController=oauth;
     
     return YES;

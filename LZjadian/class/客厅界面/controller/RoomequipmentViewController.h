@@ -12,4 +12,5 @@
 ///属性传值
 @property(strong,nonatomic)NSArray * subAr,*subapparstr;
 @property(nonatomic,strong)NSString * roomName,*roombian;
+
 @end

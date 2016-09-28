@@ -45,6 +45,7 @@
     CGFloat appviewh=(appvieww+20)/2;
     
     CGFloat margin=(subviews.frame.size.width-totalloc*appvieww)/(totalloc+1);
+    
 //    int count=(int)appsar.count;
     for (int i=0; i<appsar.count; i++)
     {
@@ -68,15 +69,18 @@
         }];
         
         //创建uiview控件中的子视图
-        UIImageView *appimageview=[[UIImageView alloc]initWithFrame:CGRectMake(0, 0, appvieww, appvieww)];
+        UIButton *appimageview=[[UIButton alloc]initWithFrame:CGRectMake(0, 0, appvieww, appvieww)];
 //        appimageview.tag=i;
         appview.tag=i;
         appimageview.tag=i+1;
 //        NSLog(@"%@",[appsar[i] objectAtIndex:0]);
         UIImage *appimage=[UIImage imageNamed:appsar[i]];
-        appimageview.image=appimage;
+        [appimageview setBackgroundImage:appimage forState:UIControlStateNormal];
+//        appimageview.image=appimage;
         [appimageview setContentMode:UIViewContentModeScaleAspectFit];
         [appview addSubview:appimageview];
+        //点击图片
+        [appimageview addTarget:vctl action:@selector(onClickImage:) forControlEvents:UIControlEventTouchUpInside];
         //创建文本标签
         UILabel *applable=[[UILabel alloc]initWithFrame:CGRectMake(0, appvieww, appvieww, 20)];
 //        applable.tag=2;
@@ -87,10 +91,10 @@
         [applable setFont:[UIFont systemFontOfSize:12.0]];
         [appview addSubview:applable];
         //让图片做出响应
-        appview.userInteractionEnabled=YES;
-        //点击图片
-        UITapGestureRecognizer *singleTap =[[UITapGestureRecognizer alloc]initWithTarget:vctl action:@selector(onClickImage:)];
-        [appview addGestureRecognizer:singleTap];
+//        appview.userInteractionEnabled=YES;
+       
+//        UITapGestureRecognizer *singleTap =[[UITapGestureRecognizer alloc]initWithTarget:vctl action:@selector(onClickImage:)];
+//        [appview addGestureRecognizer:singleTap];
         //长按图片
         //实例化长按手势监听
         UILongPressGestureRecognizer *longPress =

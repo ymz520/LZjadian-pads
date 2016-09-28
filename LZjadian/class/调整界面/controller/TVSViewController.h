@@ -10,4 +10,6 @@
 
 @interface TVSViewController : UIViewController
 @property(assign,nonatomic)UIView *vies;
+
+@property(copy,nonatomic)NSArray *sectionCount;
 @end

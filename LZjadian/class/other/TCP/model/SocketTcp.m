@@ -17,7 +17,6 @@
 #pragma mark-建立连接
 -(BOOL)connectSocket
 {
-    
     //主机／端口号
     NSString *host=@"192.168.1.66";
     int port=6666;
@@ -37,7 +36,6 @@
     
 }
 #pragma mark_读取数据
-
 #pragma mark-断开连接
 - (void)socketDidDisconnect:(GCDAsyncSocket *)sock withError:(NSError *)err
 {
